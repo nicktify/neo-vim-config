@@ -1,0 +1,12 @@
+--require('basic')
+require('_packer')
+require('_telescope')
+require('_configuration')
+require('_evil_lualine')
+require('_lsp_servers')
+require('_nvim_tree')
+require('_treesitter')
+require('_bufferline')
+require('lualine').setup()
+
+require('_key_mapping')
