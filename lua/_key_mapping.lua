@@ -5,7 +5,6 @@ vim.api.nvim_set_keymap('n', '<C-S>', ':%s/', { noremap = true })
 
 -- nvim tree
 vim.api.nvim_set_keymap('n', '<C-N>', "<cmd>NvimTreeToggle<CR>", { noremap = true })
-
 -- telescope
 vim.api.nvim_set_keymap('n', '<C-P>', "<cmd>lua require('telescope.builtin').find_files()<CR>", { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-G>', "<cmd>lua require('telescope.builtin').live_grep()<CR>", { noremap = true })

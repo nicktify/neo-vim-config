@@ -12,7 +12,6 @@ vim.o.lazyredraw = true
 vim.o.scrolloff = 10
 vim.o.background = 'dark'
 vim.o.showtabline = 2
-vim.o.signcolumn = 'yes'
 
 -- vim.o.colorcolumn = '80'
 
