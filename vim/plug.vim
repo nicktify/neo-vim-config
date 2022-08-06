@@ -25,9 +25,16 @@ Plug 'nvim-lualine/lualine.nvim'
 Plug 'EdenEast/nightfox.nvim' "
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
-Plug 'nvim-lua/plenary.nvim'
 Plug 'sindrets/diffview.nvim'
 Plug 'overcache/NeoSolarized'
 Plug 'christoomey/vim-tmux-navigator'
+
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'tpope/vim-fugitive'
+
+
+Plug 'RishabhRD/popfix'
+Plug 'RishabhRD/nvim-finder'
 
 call plug#end()

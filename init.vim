@@ -14,3 +14,4 @@ if exists("&termguicolors") && exists("&winblend")
   colorscheme NeoSolarized
 endif
 
+set clipboard+=unnamedplus

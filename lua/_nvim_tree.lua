@@ -1,13 +1,13 @@
 require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
   auto_reload_on_write = true,
-  disable_netrw = false,
-  hijack_cursor = false,
+  disable_netrw = true,
+  hijack_cursor = true,
   hijack_netrw = true,
-  hijack_unnamed_buffer_when_opening = false,
+  hijack_unnamed_buffer_when_opening = true,
   ignore_buffer_on_setup = false,
   open_on_setup = false,
   open_on_setup_file = false,
-  open_on_tab = false,
+  open_on_tab = true,
   sort_by = "name",
   update_cwd = false,
   reload_on_bufenter = false,
@@ -21,7 +21,7 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
     relativenumber = true,
     signcolumn = "no",
     mappings = {
-      custom_only = false,
+      --custom_only = false,
       list = {
         -- user mappings go here
       },
@@ -42,12 +42,12 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
     },
   },
   hijack_directories = {
-    enable = true,
-    auto_open = true,
+    enable = false,
+    auto_open = false,
   },
   update_focused_file = {
-    enable = true,
-    update_cwd = true,
+    enable = false,
+    update_cwd = false,
     ignore_list = {},
   },
   ignore_ft_on_setup = {},
@@ -72,21 +72,21 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
   },
   git = {
     enable = true,
-    ignore = true,
+    ignore = false,
     timeout = 400,
   },
   actions = {
     use_system_clipboard = true,
     change_dir = {
-      enable = true,
+      enable = false,
       global = false,
       restrict_above_cwd = false,
     },
     open_file = {
-      quit_on_open = true,
-      resize_window = true,
+      quit_on_open = false,
+      resize_window = false,
       window_picker = {
-        enable = true,
+        enable = false,
         chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890",
         exclude = {
           filetype = { "notify", "packer", "qf", "diff", "fugitive", "fugitiveblame" },
@@ -101,7 +101,7 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
   },
   live_filter = {
     prefix = "[FILTER]: ",
-    always_show_folders = true,
+    always_show_folders = false,
   },
   log = {
     enable = false,

@@ -1,5 +1,6 @@
 --require('basic')
 require('_packer')
+require('_dashboard')
 require('_telescope')
 require('_configuration')
 require('_evil_lualine')
